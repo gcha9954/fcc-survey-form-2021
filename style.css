@@ -1,0 +1,23 @@
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+}
+
+.question {
+  margin: 1rem;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
+
+#submit {
+  width: 100%;
+}

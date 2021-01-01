@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>placeholder</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">placeholder</h1>
+    <p id="description">
+      placeholder
+    </p>
+
+    <form action="#" id="survey-form">
+      <div class="question">
+        <label id="name-label" for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="question">
+        <label id="email-label" for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="question">
+        <label id="number-label" for="number">Age: </label>
+        <input
+          type="number"
+          min="0"
+          max="125"
+          name="age"
+          id="number"
+          placeholder="Enter your age"
+        />
+      </div>
+      <div class="question">
+        <label for="dropdown">Select: </label>
+        <select name="role" id="dropdown">
+          <option value="placeholder1">placeholder</option>
+          <option value="placeholder2">placeholder</option>
+          <option value="placeholder3">placeholder</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="placeholder4">
+          <input
+            type="radio"
+            name="placeholder"
+            id="placeholder4"
+            value="placeholder4"
+          />
+          placeholder1
+        </label>
+        <label for="placeholder5">
+          <input
+            type="radio"
+            name="placeholder"
+            id="placeholder5"
+            value="placeholder5"
+          />
+          placeholder2
+        </label>
+        <label for="placeholder6">
+          <input
+            type="radio"
+            name="placeholder"
+            id="placeholder6"
+            value="placeholder6"
+          />
+          placeholder3
+        </label>
+      </div>
+      <div class="question">
+        <label for="placeholder7">
+          <input
+            type="checkbox"
+            name="placeholder2"
+            id="placeholder7"
+            value="placeholder7"
+          />
+          placeholder8
+        </label>
+        <label for="placeholder8">
+          <input
+            type="checkbox"
+            name="placeholder2"
+            id="placeholder8"
+            value="placeholder8"
+          />
+          placeholder9
+        </label>
+        <label for="placeholder9">
+          <input
+            type="checkbox"
+            name="placeholder2"
+            id="placeholder9"
+            value="placeholder9"
+          />
+          placeholder9
+        </label>
+        <label for="placeholder10">
+          <input
+            type="checkbox"
+            name="placeholder2"
+            id="placeholder10"
+            value="placeholder10"
+          />
+          placeholder9
+        </label>
+      </div>
+      <div class="question">
+        <label for="additional">Additional comments: </label>
+        <textarea
+          name="additional"
+          id="additional"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <button id="submit" type="submit">Sumbit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
