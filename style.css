@@ -29,6 +29,11 @@ input[type="email"] {
   width: 100%;
 }
 
+/* input[type="checkbox"],
+input[type="radio"] {
+  display: block;
+} */
+
 textarea {
   display: block;
   width: 100%;
