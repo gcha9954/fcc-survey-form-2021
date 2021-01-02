@@ -4,135 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>placeholder</title>
-
+    <title>Newsletter signup form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="title">placeholder</h1>
+    <h1 id="title">Newsletter Signup</h1>
     <p id="description">
-      placeholder
+      Please enter some information so that we can personalise our newsletter
+      content for you.
     </p>
-
-    <form action="#" id="survey-form">
-      <div class="question">
-        <label id="name-label" for="name">Name: </label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Enter your name"
-          required
-        />
-      </div>
-      <div class="question">
-        <label id="email-label" for="email">Email: </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          required
-        />
-      </div>
-      <div class="question">
-        <label id="number-label" for="number">Age: </label>
-        <input
-          type="number"
-          min="0"
-          max="125"
-          name="age"
-          id="number"
-          placeholder="Enter your age"
-        />
-      </div>
-      <div class="question">
-        <label for="dropdown">Select: </label>
-        <select name="role" id="dropdown">
-          <option value="placeholder1">placeholder</option>
-          <option value="placeholder2">placeholder</option>
-          <option value="placeholder3">placeholder</option>
-        </select>
-      </div>
-      <div class="question">
-        <label for="placeholder4">
+    <div class="survey-form">
+      <form action="#" id="survey-form">
+        <div class="question">
+          <label class="br-label" id="name-label" for="name">Name: </label>
           <input
-            type="radio"
-            name="placeholder"
-            id="placeholder4"
-            value="placeholder4"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
           />
-          placeholder1
-        </label>
-        <label for="placeholder5">
+        </div>
+        <div class="question">
+          <label class="br-label" id="email-label" for="email">Email: </label>
           <input
-            type="radio"
-            name="placeholder"
-            id="placeholder5"
-            value="placeholder5"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
           />
-          placeholder2
-        </label>
-        <label for="placeholder6">
+        </div>
+        <div class="question">
+          <label class="br-label" id="number-label" for="number"
+            >Age: (optional)</label
+          >
           <input
-            type="radio"
-            name="placeholder"
-            id="placeholder6"
-            value="placeholder6"
+            type="number"
+            min="0"
+            max="125"
+            name="age"
+            id="number"
+            placeholder="Enter your age"
           />
-          placeholder3
-        </label>
-      </div>
-      <div class="question">
-        <label for="placeholder7">
-          <input
-            type="checkbox"
-            name="placeholder2"
-            id="placeholder7"
-            value="placeholder7"
-          />
-          placeholder8
-        </label>
-        <label for="placeholder8">
-          <input
-            type="checkbox"
-            name="placeholder2"
-            id="placeholder8"
-            value="placeholder8"
-          />
-          placeholder9
-        </label>
-        <label for="placeholder9">
-          <input
-            type="checkbox"
-            name="placeholder2"
-            id="placeholder9"
-            value="placeholder9"
-          />
-          placeholder9
-        </label>
-        <label for="placeholder10">
-          <input
-            type="checkbox"
-            name="placeholder2"
-            id="placeholder10"
-            value="placeholder10"
-          />
-          placeholder9
-        </label>
-      </div>
-      <div class="question">
-        <label for="additional">Additional comments: </label>
-        <textarea
-          name="additional"
-          id="additional"
-          cols="30"
-          rows="10"
-        ></textarea>
-      </div>
-      <button id="submit" type="submit">Sumbit</button>
-    </form>
-
+        </div>
+        <div class="question">
+          <p class="br-label">Select newsletter frequency:</p>
+          <select name="frequency" id="dropdown">
+            <option value="weekly">Weekly</option>
+            <option value="biweekly">Biweekly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+        <div class="question">
+          <p class="br-label">Select your favourite color:</p>
+          <label for="red">
+            <input type="radio" name="colors" id="red" value="red" />
+            Red
+          </label>
+          <label for="blue">
+            <input type="radio" name="colors" id="blue" value="blue" />
+            Blue
+          </label>
+          <label for="none">
+            <input type="radio" name="colors" id="none" value="none" />
+            Prefer not to say
+          </label>
+        </div>
+        <div class="question">
+          <p class="br-label">Select topics:</p>
+          <label for="front-end">
+            <input
+              type="checkbox"
+              name="topics"
+              id="front-end"
+              value="front-end"
+            />
+            Front-End
+          </label>
+          <label for="back-end">
+            <input
+              type="checkbox"
+              name="topics"
+              id="back-end"
+              value="back-end"
+            />
+            Back-end
+          </label>
+          <label for="git">
+            <input type="checkbox" name="topics" id="git" value="git" />
+            Git
+          </label>
+          <label for="devops">
+            <input type="checkbox" name="topics" id="devops" value="devops" />
+            DevOps
+          </label>
+        </div>
+        <div class="question">
+          <label for="additional">Additional comments: </label>
+          <textarea name="additional" id="additional" rows="8"></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
